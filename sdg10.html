@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مساواة أكثر.. عالم أفضل | الهدف العاشر للتنمية المستدامة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F4FA;--ink:#1D1030;--mut:#5B5070;--card:#fff;--line:#E2DCEE;--pink:#DD1367;--teal:#0E7C86;--hero:#DD1367;--herotx:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#150D22;--ink:#F3EEFA;--mut:#B7ABCB;--card:#211634;--line:#352748;--pink:#FF4D8F;--teal:#4CC9D4;--hero:#A60E4D}}
+:root[data-theme="dark"]{--bg:#150D22;--ink:#F3EEFA;--mut:#B7ABCB;--card:#211634;--line:#352748;--pink:#FF4D8F;--teal:#4CC9D4;--hero:#A60E4D}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,"Segoe UI",Tahoma,sans-serif;line-height:1.9;font-size:18px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:8px 12px}
+nav a{text-decoration:none;padding:4px 14px;border-radius:99px;font-weight:500;font-size:16px}
+nav a:hover{background:var(--card)}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header.hero{background:var(--hero);color:var(--herotx);padding:56px 0 0;overflow:hidden}
+.hero h1{font-size:clamp(40px,8vw,84px);line-height:1.15;margin:0 0 14px;font-weight:900}
+.hero p{font-size:clamp(18px,2.4vw,23px);max-width:34em;margin:0 0 26px;opacity:.95}
+.btn{display:inline-block;background:#fff;color:#A60E4D;font:800 18px Tajawal,sans-serif;border:0;border-radius:99px;padding:10px 28px;text-decoration:none;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.stairs{display:flex;align-items:flex-end;gap:6px;height:170px;margin-top:40px}
+.stairs i{flex:1;background:rgba(255,255,255,.88);border-radius:8px 8px 0 0;height:0;animation:up 1.1s cubic-bezier(.2,.8,.2,1) forwards}
+.stairs i:last-child{background:#fff}
+@keyframes up{to{height:var(--h)}}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4.5vw,44px);line-height:1.3;margin:0 0 12px;font-weight:900}
+.lead{color:var(--mut);max-width:40em;margin:0 0 32px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.big{font-size:56px;font-weight:900;color:var(--pink);line-height:1.1}
+.card h3{margin:0 0 6px;font-size:21px}
+.card p{margin:0;color:var(--mut);font-size:16.5px;line-height:1.8}
+.sim{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:230px;border-bottom:2px solid var(--line);padding-bottom:0}
+.bar{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;font-size:14px;font-weight:800}
+.bar b{display:block;width:100%;background:var(--pink);border-radius:8px 8px 0 0;transition:height .7s cubic-bezier(.3,.9,.3,1);min-height:3px}
+.bar:nth-child(-n+5) b{background:var(--teal)}
+.lbl{display:flex;gap:8px;font-size:13px;color:var(--mut);text-align:center;margin-top:6px}
+.lbl span{flex:1}
+.tg{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.tg button{font:500 17px Tajawal,sans-serif;color:var(--ink);background:transparent;border:2px solid var(--line);border-radius:99px;padding:6px 18px;cursor:pointer;transition:.2s}
+.tg button[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:800}
+.meter{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.meter div{background:var(--bg);border-radius:14px;padding:12px 16px;font-size:16px}
+.meter strong{display:block;font-size:34px;font-weight:900;color:var(--pink)}
+.tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tabs button{font:800 18px Tajawal,sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 22px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--pink);border-color:var(--pink);color:#fff}
+.panel[hidden]{display:none}
+.panel ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.panel li{background:var(--card);border:1px solid var(--line);border-right:6px solid var(--teal);border-radius:12px;padding:14px 18px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:4px 20px}
+summary{cursor:pointer;font-weight:800;padding:10px 0;font-size:19px}
+details p{margin:0 0 12px;color:var(--mut)}
+.pledge{background:var(--teal);color:#fff;border-radius:28px;padding:48px 24px;text-align:center}
+.pledge h2{margin-bottom:8px}
+.pledge .btn{color:#0A5159;margin-top:12px}
+#count{font-size:22px;font-weight:800;margin-top:14px;min-height:34px}
+footer{text-align:center;color:var(--mut);padding:30px 20px 40px;font-size:15px}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav aria-label="التنقل">
+<a href="#problem">المشكلة</a><a href="#sim">جرّب بنفسك</a><a href="#causes">الأسباب</a><a href="#solutions">الحلول</a><a href="#targets">الغايات</a><a href="#join">شارك</a>
+</nav>
+
+<header class="hero">
+<div class="wrap">
+<h1>الفرصة حق للجميع،<br>مش للقلة.</h1>
+<p>الهدف العاشر من أهداف التنمية المستدامة: الحد من عدم المساواة داخل البلدان وفيما بينها. تعالَ نفهم المشكلة، ونجرّب الحلول، ونشوف دورنا فيها.</p>
+<a class="btn" href="#sim">جرّب كيف نحل المشكلة</a>
+<div class="stairs" aria-hidden="true">
+<i style="--h:12%;animation-delay:.1s"></i><i style="--h:16%;animation-delay:.2s"></i><i style="--h:22%;animation-delay:.3s"></i><i style="--h:28%;animation-delay:.4s"></i><i style="--h:36%;animation-delay:.5s"></i><i style="--h:46%;animation-delay:.6s"></i><i style="--h:58%;animation-delay:.7s"></i><i style="--h:74%;animation-delay:.8s"></i><i style="--h:100%;animation-delay:.9s"></i>
+</div>
+</div>
+</header>
+
+<main>
+<section id="problem"><div class="wrap">
+<h2>إيه هي المشكلة؟</h2>
+<p class="lead">عدم المساواة معناه إن الناس لا تحصل على نفس الفرص في التعليم والعمل والصحة والدخل، بسبب الثروة أو الجنس أو الإعاقة أو الأصل أو مكان الميلاد. والأرقام العالمية بتوضح حجم الفجوة:</p>
+<div class="grid">
+<div class="card"><div class="big"><span class="cnt" data-to="76">0</span>%</div><h3>من الثروة العالمية</h3><p>يملكها أغنى 10% من سكان العالم تقريباً.</p></div>
+<div class="card"><div class="big"><span class="cnt" data-to="2">0</span>%</div><h3>نصيب أفقر نصف العالم</h3><p>نصف سكان الأرض الأقل دخلاً يملكون نحو 2% فقط من الثروة.</p></div>
+<div class="card"><div class="big"><span class="cnt" data-to="52">0</span>%</div><h3>من الدخل العالمي</h3><p>يذهب لأغنى 10%، بينما ينال أفقر 50% حوالي 8% فقط.</p></div>
+</div>
+<p style="color:var(--mut);font-size:14px;margin-top:12px">المصدر: تقرير عدم المساواة العالمي (World Inequality Report 2022).</p>
+</div></section>
+
+<section id="sim" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+<h2>جرّب بنفسك: كيف نعدّل الميزان؟</h2>
+<p class="lead">كل عمود يمثل 10% من السكان، من الأفقر (يمين) إلى الأغنى (يسار)، وارتفاعه هو نصيبه من الثروة. فعّل السياسات وشوف الفرق. (نموذج توضيحي مبسّط)</p>
+<div class="sim">
+<div class="bars" id="bars" role="img" aria-label="رسم يوضح توزيع الثروة بين عشر شرائح من السكان"></div>
+<div class="lbl" id="lbl"></div>
+<div class="tg" id="tg">
+<button aria-pressed="false" data-w=".25">ضرائب تصاعدية عادلة</button>
+<button aria-pressed="false" data-w=".3">تعليم وصحة للجميع</button>
+<button aria-pressed="false" data-w=".25">حماية اجتماعية ودعم للأسر</button>
+</div>
+<div class="meter" aria-live="polite">
+<div>نصيب أغنى 10%<strong id="top">64%</strong></div>
+<div>نصيب أفقر 50%<strong id="bot">9%</strong></div>
+</div>
+</div>
+</div></section>
+
+<section id="causes"><div class="wrap">
+<h2>ليه بتحصل؟</h2>
+<div class="grid" style="margin-top:24px">
+<div class="card"><h3>فجوة التعليم</h3><p>جودة التعليم تختلف حسب المنطقة والدخل، فتورّث الفقر من جيل لجيل.</p></div>
+<div class="card"><h3>التمييز</h3><p>بسبب النوع أو الإعاقة أو الأصل أو الدين، يُحرم ناس من وظائف وخدمات.</p></div>
+<div class="card"><h3>ضعف الحماية</h3><p>غياب التأمين الصحي والاجتماعي يجعل أي أزمة تدفع الأسرة للفقر.</p></div>
+<div class="card"><h3>اختلال الأسواق</h3><p>الأجور المتدنية وتركّز الثروة والفرص في فئة صغيرة.</p></div>
+</div>
+</div></section>
+
+<section id="solutions" style="background:var(--card);border-block:1px solid var(--line)"><div class="wrap">
+<h2>إزاي نحلها؟</h2>
+<p class="lead">الحل مش مسؤولية جهة واحدة. اختار مستوى وشوف الدور المطلوب منه:</p>
+<div class="tabs" role="tablist">
+<button role="tab" aria-selected="true" data-p="p1">الدولة</button>
+<button role="tab" aria-selected="false" data-p="p2">المجتمع والشركات</button>
+<button role="tab" aria-selected="false" data-p="p3">أنا كفرد</button>
+</div>
+<div class="panel" id="p1"><ul><li>نظام ضرائب تصاعدي، وإنفاق عادل على التعليم والصحة.</li><li>حد أدنى للأجور وحماية اجتماعية تغطي الفئات الأولى بالرعاية.</li><li>إلغاء القوانين والممارسات التمييزية وضمان تكافؤ الفرص.</li><li>دعم المشروعات الصغيرة والمناطق الأقل نمواً.</li></ul></div>
+<div class="panel" id="p2" hidden><ul><li>الشركات تعتمد أجوراً عادلة وتوظّف بلا تمييز.</li><li>المبادرات الأهلية تقدم تدريباً ومنحاً للفئات المهمشة.</li><li>تهيئة الأماكن والخدمات لذوي الإعاقة.</li><li>نشر الوعي بحقوق الجميع في الفرص.</li></ul></div>
+<div class="panel" id="p3" hidden><ul><li>ارفض التنمر والتمييز في مدرستك وعملك وأمام الناس.</li><li>تطوّع بوقتك أو مهارتك لتعليم أو مساعدة غيرك.</li><li>ادعم المنتجات المحلية والمشروعات الصغيرة.</li><li>انشر المعلومة الصحيحة عن الهدف العاشر حولك.</li></ul></div>
+</div></section>
+
+<section id="targets"><div class="wrap">
+<h2>غايات الهدف العاشر</h2>
+<p class="lead" style="margin-bottom:20px">اضغط على أي غاية لتفاصيلها.</p>
+<details><summary>رفع دخل أفقر 40% من السكان</summary><p>زيادة نمو دخل الفئة الأفقر بمعدل أعلى من المتوسط الوطني.</p></details>
+<details><summary>تمكين الجميع ودمجهم</summary><p>دمج الجميع اجتماعياً واقتصادياً وسياسياً بغض النظر عن السن أو الجنس أو الإعاقة أو العرق أو الدين.</p></details>
+<details><summary>تكافؤ الفرص</summary><p>إلغاء القوانين والسياسات التمييزية وتشجيع التشريعات العادلة.</p></details>
+<details><summary>سياسات مالية وحماية اجتماعية</summary><p>اعتماد سياسات للضرائب والأجور والحماية الاجتماعية تحقق مساواة أكبر.</p></details>
+<details><summary>تنظيم الأسواق المالية العالمية</summary><p>تحسين الرقابة على المؤسسات والأسواق المالية العالمية.</p></details>
+<details><summary>صوت أقوى للدول النامية</summary><p>زيادة تمثيلها في صنع القرار بالمؤسسات الاقتصادية الدولية.</p></details>
+<details><summary>هجرة آمنة ومنظمة</summary><p>تسهيل تنقل الأشخاص بشكل منظم وآمن ومسؤول.</p></details>
+<details><summary>خفض تكلفة تحويلات المهاجرين</summary><p>تخفيض تكلفة التحويلات إلى أقل من 3%.</p></details>
+</div></section>
+
+<section id="join"><div class="wrap">
+<div class="pledge">
+<h2>التغيير يبدأ بخطوة منك</h2>
+<p>اضغط لتأخذ تعهدك بدعم المساواة في محيطك.</p>
+<button class="btn" id="pledge">أتعهد بدعم المساواة</button>
+<div id="count" aria-live="polite"></div>
+</div>
+</div></section>
+</main>
+<footer>مشروع توعوي عن الهدف العاشر للتنمية المستدامة: الحد من أوجه عدم المساواة.</footer>
+
+<script>
+(function(){
+var base=[1,1,2,2,3,4,5,7,11,64],names=["1","2","3","4","5","6","7","8","9","10"];
+var bars=document.getElementById("bars"),lbl=document.getElementById("lbl");
+base.forEach(function(v,i){var d=document.createElement("div");d.className="bar";d.innerHTML='<span></span><b></b>';bars.appendChild(d);var s=document.createElement("span");s.textContent="شريحة "+names[i];lbl.appendChild(s)});
+function draw(){
+  var t=0;document.querySelectorAll("#tg button[aria-pressed='true']").forEach(function(b){t+=parseFloat(b.dataset.w)});
+  var vals=base.map(function(v){return v+(10-v)*t});
+  var max=Math.max.apply(null,vals);
+  bars.querySelectorAll(".bar").forEach(function(el,i){
+    el.querySelector("b").style.height=(vals[i]/70*85)+"%";
+    el.querySelector("span").textContent=Math.round(vals[i])+"%";
+  });
+  document.getElementById("top").textContent=Math.round(vals[9])+"%";
+  document.getElementById("bot").textContent=Math.round(vals.slice(0,5).reduce(function(a,b){return a+b},0))+"%";
+}
+draw();
+document.getElementById("tg").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")==="true"?"false":"true");draw()});
+document.querySelectorAll(".tabs button").forEach(function(b){b.addEventListener("click",function(){
+  document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-selected","false")});
+  b.setAttribute("aria-selected","true");
+  document.querySelectorAll(".panel").forEach(function(p){p.hidden=p.id!==b.dataset.p});
+})});
+function count(el){var to=+el.dataset.to,n=0,st=Math.max(1,Math.round(to/40));var id=setInterval(function(){n+=st;if(n>=to){n=to;clearInterval(id)}el.textContent=n},30)}
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);io.unobserve(e.target)}})},{threshold:.6});document.querySelectorAll(".cnt").forEach(function(c){io.observe(c)})}
+else{document.querySelectorAll(".cnt").forEach(function(c){c.textContent=c.dataset.to})}
+var n=0,msgs=["شكراً لك! أنت الآن جزء من الحل.","كل خطوة صغيرة تفرق. شارك الفكرة مع صديق."];
+document.getElementById("pledge").addEventListener("click",function(){n++;document.getElementById("count").textContent=msgs[n>1?1:0]});
+})();
+</script>
+</body>
+</html>
